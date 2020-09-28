@@ -2,8 +2,8 @@ import React, {Component} from 'react';
 import '../styles/App.css';
 import { BrowserRouter, Switch, Route, NavLink } from 'react-router-dom';
 import Home from './Home';
-// import AboutUs from './MyProfile';
-// import MyProfile from './AboutUs';
+import MyProfile from './MyProfile';
+// import AboutUs from './AboutUs';
 
 class App extends Component {
   render() {
@@ -23,7 +23,7 @@ class App extends Component {
                 <Route exact path='/'>
                   <Home />
                 </Route>
-                {/*<Route path='/my-profile' component={MyProfile} />*/}
+                <Route path='/my-profile' component={MyProfile} />
                 {/*<Route path='/about-us' component={AboutUs} />*/}
               </Switch>
             </div>
