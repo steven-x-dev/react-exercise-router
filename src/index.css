@@ -46,6 +46,10 @@ div.nav-bar a {
   padding: 15px 20px;
 }
 
+div.nav-bar a.active {
+  text-decoration: underline;
+}
+
 div.nav-bar a,
 div.nav-bar a:visited {
   color: #252525;

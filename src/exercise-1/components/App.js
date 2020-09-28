@@ -12,7 +12,7 @@ class App extends Component {
         <BrowserRouter>
           <div className='nav-bar-wrapper'>
             <div className='nav-bar'>
-              <NavLink to='/'>Home</NavLink>
+              <NavLink exact to='/'>Home</NavLink>
               <NavLink to='/my-profile'>My Profile</NavLink>
               <NavLink to='/about-us'>About Us</NavLink>
             </div>
@@ -20,9 +20,7 @@ class App extends Component {
           <main>
             <div className='content-wrapper'>
               <Switch>
-                <Route exact path='/'>
-                  <Home />
-                </Route>
+                <Route exact path='/' component={Home} />
                 <Route path='/my-profile' component={MyProfile} />
                 <Route path='/about-us' component={AboutUs} />
               </Switch>
