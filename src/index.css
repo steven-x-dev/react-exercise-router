@@ -50,3 +50,12 @@ div.nav-bar a,
 div.nav-bar a:visited {
   color: #252525;
 }
+
+a.redirect {
+  color: red;
+  font-weight: bold;
+}
+
+a.redirect:visited {
+  color: red;
+}

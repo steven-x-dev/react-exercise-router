@@ -3,7 +3,7 @@ import '../styles/App.css';
 import { BrowserRouter, Switch, Route, NavLink } from 'react-router-dom';
 import Home from './Home';
 import MyProfile from './MyProfile';
-// import AboutUs from './AboutUs';
+import AboutUs from './AboutUs';
 
 class App extends Component {
   render() {
@@ -24,7 +24,7 @@ class App extends Component {
                   <Home />
                 </Route>
                 <Route path='/my-profile' component={MyProfile} />
-                {/*<Route path='/about-us' component={AboutUs} />*/}
+                <Route path='/about-us' component={AboutUs} />
               </Switch>
             </div>
           </main>
