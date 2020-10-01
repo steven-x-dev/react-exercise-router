@@ -35,7 +35,7 @@ class Products extends React.Component {
     return (
       <BrowserRouter>
         <Switch>
-          <Route path='/products'>
+          <Route exact path='/products'>
             <p className='title'>All Products:</p>
             {Object.entries(this.state).map(entry => this.renderProductLink(entry))}
           </Route>
