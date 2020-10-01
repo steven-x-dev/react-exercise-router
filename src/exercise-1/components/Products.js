@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Link, Route, Switch } from 'react-router-dom';
+import { Link, Route, Switch } from 'react-router-dom';
 import Product from "./Product";
 
 class Products extends React.Component {
@@ -33,15 +33,13 @@ class Products extends React.Component {
 
   render() {
     return (
-      <BrowserRouter>
-        <Switch>
-          <Route path='/products'>
-            <p className='title'>All Products:</p>
-            {Object.entries(this.state).map(entry => this.renderProductLink(entry))}
-          </Route>
-          <Route path='/products/:id' component={Product} />
-        </Switch>
-      </BrowserRouter>
+      <Switch>
+        <Route exact path='/products'>
+          <p className='title'>All Products:</p>
+          {Object.entries(this.state).map(entry => this.renderProductLink(entry))}
+        </Route>
+        <Route path='/products/:id' component={Product} />
+      </Switch>
     );
   }
 
